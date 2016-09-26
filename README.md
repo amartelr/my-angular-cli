@@ -57,5 +57,6 @@ ng g component ./components/about
 
 ng g component ./components/carousel
 
+# Footer component
 
-
+ng g component ./components/footer
