@@ -29,3 +29,12 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Installing bootstrap version 4 
+
+npm install jquery --save
+npm install bootstrap@next --save 
+
+Some javascript libraries need to be added to the global scope, and loaded as if they were in a script tag.
+We can do this using the apps[0].scripts and apps[0].styles properties of angular-cli.json
+
+
