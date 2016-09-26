@@ -10,17 +10,19 @@ import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import { AppComponent } from './components/app/app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
     NavbarComponent, 
-    HomeComponent
+    HomeComponent, AboutComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-        {path: '',component: HomeComponent}             
+        {path: '',component: HomeComponent} ,
+        {path: 'about',component: AboutComponent} ,
     ]) 
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],

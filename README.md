@@ -47,3 +47,10 @@ ng g component ./components/navbar
 # Routing home component
 
 ng g component ./components/home
+
+# Routing about component
+
+ng g component ./components/about
+
+
+
