@@ -38,3 +38,8 @@ Some javascript libraries need to be added to the global scope, and loaded as if
 We can do this using the apps[0].scripts and apps[0].styles properties of angular-cli.json
 
 
+# Adding navbar component, samples bootstrap 4: http://v4-alpha.getbootstrap.com/examples/
+
+cd src\app
+
+ng g component ./components/navbar
