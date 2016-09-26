@@ -43,3 +43,7 @@ We can do this using the apps[0].scripts and apps[0].styles properties of angula
 cd src\app
 
 ng g component ./components/navbar
+
+# Routing home component
+
+ng g component ./components/home
