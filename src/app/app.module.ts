@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
+import { HighlightDirective, HighlightDirective2 } from './directives/helper.directives';
 
 
 
@@ -18,7 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
   declarations: [
     AppComponent, 
     NavbarComponent, 
-    HomeComponent, AboutComponent, CarouselComponent, FooterComponent
+    HomeComponent, AboutComponent, CarouselComponent, FooterComponent, HighlightDirective, HighlightDirective2
   ],
   imports: [
     BrowserModule,
