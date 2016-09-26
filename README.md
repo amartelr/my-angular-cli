@@ -1,62 +1,52 @@
-# Dos
+# Playing with angular 2 framework and bootstrap 4
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
+[![N|Angular](https://raw.githubusercontent.com/angular/angular.js/master/images/logo/AngularJS-Shield.exports/AngularJS-Shield-small.png)](https://angular.io/)
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Build and Running
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
+```sh
+ng build
+ng serve
+```
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# Installing bootstrap version 4 
 
+# General Steps
+
+## Installing bootstrap version 4 
+
+```sh
 npm install jquery --save
 npm install bootstrap@next --save 
+```
 
 Some javascript libraries need to be added to the global scope, and loaded as if they were in a script tag.
 We can do this using the apps[0].scripts and apps[0].styles properties of angular-cli.json
 
 
-# Adding navbar component, samples bootstrap 4: http://v4-alpha.getbootstrap.com/examples/
+## Adding navbar component, samples [bootstrap 4](http://v4-alpha.getbootstrap.com)
 
+```sh
 cd src\app
-
 ng g component ./components/navbar
+```
 
-# Routing home component
-
+## Routing home component
+```sh
 ng g component ./components/home
+```
 
-# Routing about component
-
+## Routing about component
+```sh
 ng g component ./components/about
+```
 
-
-# Carousel component
-
+## Carousel component
+```sh
 ng g component ./components/carousel
+```
 
-# Footer component
-
+## Footer component
+```sh
 ng g component ./components/footer
+```
