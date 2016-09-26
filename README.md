@@ -53,4 +53,9 @@ ng g component ./components/home
 ng g component ./components/about
 
 
+# Carousel component
+
+ng g component ./components/carousel
+
+
 
