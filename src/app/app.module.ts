@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpModule, JsonpModule }  from '@angular/http';
 import { RouterModule } from '@angular/router';
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import { HighlightDirective, HighlightDirective2 } from './directives/helper.directives';
@@ -17,17 +17,18 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { WikiComponent } from './components/wiki/wiki.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
     NavbarComponent, 
-    HomeComponent, AboutComponent, CarouselComponent, FooterComponent, HighlightDirective, HighlightDirective2
+    HomeComponent, AboutComponent, CarouselComponent, FooterComponent, HighlightDirective, HighlightDirective2, WikiComponent
   ],
   imports: [
-    BrowserModule, routing
+    BrowserModule, HttpModule, JsonpModule, routing
   ],
-  providers: [appRoutingProviders, {provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [appRoutingProviders, {provide: LocationStrategy, useClass: HashLocationStrategy} ],
   schemas:     [CUSTOM_ELEMENTS_SCHEMA]  ,
   bootstrap: [AppComponent]
 })

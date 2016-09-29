@@ -50,3 +50,7 @@ ng g component ./components/carousel
 ```sh
 ng g component ./components/footer
 ```
+## Wiki component
+```sh
+ng g component ./components/wiki
+```
